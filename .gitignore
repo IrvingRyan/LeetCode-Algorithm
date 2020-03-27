@@ -1,2 +1,5 @@
 /Java/.idea/
 /Java/Java.iml
+/Kotlin/.idea/
+*/.idea/
+*.iml
