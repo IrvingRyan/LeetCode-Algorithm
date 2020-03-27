@@ -19,28 +19,7 @@ import java.util.Arrays;
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class TwoSum {
-    public static void main(String[] args) {
-        int[] arr = new int[]{2, 7, 11, 15, 20, 30, 44, 65, 54};
-        int[] a = caculate(arr, 50);
-        int[] b = caculate(arr, 51);
-        int[] c = caculate(arr, 52);
-        printRestults(a);
-        printRestults(b);
-        printRestults(c);
-    }
 
-    /**
-     * print results
-     *
-     * @param indices results that need to print
-     */
-    private static void printRestults(int[] indices) {
-        if (indices == null) {
-            System.out.println("No Result");
-        } else {
-            System.out.println("indices are " + Arrays.toString(indices));
-        }
-    }
 
     /**
      * caculate results
@@ -49,7 +28,7 @@ public class TwoSum {
      * @param target sum's target
      * @return
      */
-    public static int[] caculate(int[] arr, int target) {
+    public int[] twoSum(int[] arr, int target) {
         int lenght = arr.length;
         for (int i = 0; i < lenght; i++) {
             for (int j = i + 1; j < lenght; j++) {
