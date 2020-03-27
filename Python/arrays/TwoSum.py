@@ -1,10 +1,11 @@
 def twoSum(arr, target):
     for i in range(len(arr)):
-        for j in range(len(arr)):
+        for j in range(i+1, len(arr)):
             if(target - arr[i] == arr[j]):
-                return i,j
+                return i, j
     return None
 
-nums = [2, 3, 5, 8, 10, 30, 40, 33, 89, 103]
 
-print(twoSum(nums, 50))
+nums = [3, 2, 4]
+
+print(twoSum(nums, 6))
