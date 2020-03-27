@@ -1,6 +1,7 @@
 package arrays;
 
-import java.util.Arrays;
+import java.util.*;
+import java.util.stream.IntStream;
 
 /**
  * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -22,11 +23,13 @@ public class TwoSum {
 
 
     /**
-     * caculate results
+     * Caculate results
+     * Using array
+     * Time complexity O(n^2)
      *
      * @param arr    data need to caculate
      * @param target sum's target
-     * @return
+     * @return indices result
      */
     public int[] twoSum(int[] arr, int target) {
         int lenght = arr.length;
@@ -35,6 +38,30 @@ public class TwoSum {
                 if ((target - arr[i]) == arr[j]) {
                     return new int[]{i, j};
                 }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Caculate results
+     * Using hash map , faster than first , but need every number is unique.
+     * Time complexity O(n)
+     *
+     * @param arr    data need to caculate
+     * @param target sum's target
+     * @return indices result
+     */
+    public int[] twoSum2(int[] arr, int target) {
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            map.put(arr[i], i);
+        }
+        for (Integer integer : map.keySet()) {
+            int num = target - integer;
+            if (map.containsKey(num)) {
+                return new int[]{map.get(integer), map.get(num)};
             }
         }
         return null;

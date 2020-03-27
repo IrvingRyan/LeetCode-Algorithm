@@ -35,6 +35,19 @@ public class TwoSumTest {
         Assert.assertArrayEquals(new int[]{1, 6}, result3);
 
     }
+    @Test
+    public void testTwoSum2() {
+        TwoSum twoSum = new TwoSum();
+        int[] result1 = twoSum.twoSum2(arr, 10);
+        Assert.assertArrayEquals(null, result1);
+
+        int[] result2 = twoSum.twoSum2(arr, 50);
+        Assert.assertArrayEquals(new int[]{4, 5}, result2);
+
+        int[] result3 = twoSum.twoSum2(arr, 51);
+        Assert.assertArrayEquals(new int[]{1, 6}, result3);
+
+    }
 
     @After
     public void after() throws Exception {
