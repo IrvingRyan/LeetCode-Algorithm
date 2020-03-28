@@ -4,3 +4,4 @@
 */.idea/
 *.iml
 /.vscode/
+/c++ 11/*/*.dSYM/
