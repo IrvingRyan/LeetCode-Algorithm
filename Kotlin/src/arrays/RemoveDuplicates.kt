@@ -22,7 +22,7 @@ class RemoveDuplicates {
      */
     fun removeDuplicates(arr: IntArray): Int { //record last different number
         var i = 0
-        for (j in arr.indices) {
+        for (j in 1 .. arr.indices) {
             if (arr[j] != arr[i]) {
                 i++
                 //put different number to recorded postion's next postion

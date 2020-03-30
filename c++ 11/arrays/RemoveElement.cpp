@@ -13,7 +13,7 @@
 #include <iostream>
 #include <vector>
 
-int removeElement(std::vector<int> vec, int val)
+int removeElement(std::vector<int> &vec, int val)
 {
     int i = 0;
     int length = vec.size();

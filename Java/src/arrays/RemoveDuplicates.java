@@ -23,7 +23,7 @@ public class RemoveDuplicates {
     public int removeDuplicates(int[] arr) {
         //record last different number
         int i = 0;
-        for (int j = 0; j < arr.length; j++) {
+        for (int j = 1; j < arr.length; j++) {
             if (arr[j] != arr[i]) {
                 i++;
                 //put different number to recorded postion's next postion

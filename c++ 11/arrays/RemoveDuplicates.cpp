@@ -13,7 +13,7 @@ int removeDuplicates(std::vector<int> &arr)
 {
     int i = 0;
     //j is fast pointer
-    for (int j = 0; j < arr.size(); j++)
+    for (int j = 1; j < arr.size(); j++)
     {
         if (arr[j] != arr[i])
         {

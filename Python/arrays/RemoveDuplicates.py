@@ -10,7 +10,7 @@
 
 def removeDuplicates(arr):
     i = 0
-    for j in range(len(arr)):
+    for j in range(1, len(arr)):
         if(arr[i] != arr[j]):
             i += 1
             arr[i] = arr[j]
