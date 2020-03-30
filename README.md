@@ -1,2 +1,2 @@
 # LeetCode-Algorithm
-LeetCode Algorithms' solution , Every solution is coded in Java , Kotlin , Python and C+
+LeetCode Algorithms' solutions , Every solution is coded in Java , Kotlin , Python and C+
